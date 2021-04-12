@@ -1,6 +1,9 @@
 # media-server
 Docker-Compose and configuration files to run the Media-Server on Raspberry Pi
 
+> ### Note:  docker folder is a snapshot of my working configuration for future reference. Please do not download.
+
+
 ## Docker containers being used
 1. [Heimdall](https://hub.docker.com/r/linuxserver/heimdall) - Dashboard
 2. [Plex](https://hub.docker.com/r/linuxserver/plex)            - Media player
@@ -26,5 +29,3 @@ Docker-Compose and configuration files to run the Media-Server on Raspberry Pi
 ## Configuring Services
 
 Please refer to the respective Service pages for configuration steps.
-
-
