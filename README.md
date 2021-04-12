@@ -23,8 +23,8 @@ Docker-Compose and configuration files to run the Media-Server on Raspberry Pi
 6. change the paths in all volumes "/mnt/media/" according to your operating system and desired location
 7. Open Terminal or Command-Prompt
 8. Navigate to the docker-compose.yml location
-9. Enter 'docker-compose up -d'
-10.Run 'docker ps' or 'docker-compose ps' to check the status of the containers.
+9. Enter `docker-compose up -d`
+10. Run `docker ps` or `docker-compose ps` to check the status of the containers.
 
 ## Configuring Services
 
