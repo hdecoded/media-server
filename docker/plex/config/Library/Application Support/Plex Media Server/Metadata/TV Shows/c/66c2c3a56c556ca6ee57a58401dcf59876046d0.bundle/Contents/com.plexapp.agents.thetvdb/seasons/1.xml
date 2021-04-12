@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Season>
+  <index/>
+  <art/>
+  <thumb/>
+  <show/>
+  <title/>
+  <art_url/>
+  <episode_count/>
+  <summary/>
+  <episodes>
+    <item external="True" extension="xml" key="1"/>
+    <item external="True" extension="xml" key="3"/>
+    <item external="True" extension="xml" key="2"/>
+    <item external="True" extension="xml" key="4"/>
+  </episodes>
+  <key/>
+  <posters>
+    <item external="True" url="https://artworks.thetvdb.com/banners/v4/season/1868999/posters/6056610a0d6e1.jpg" preview="9b611922fd9102a05e8862d0fff062e4e764e012" sort_order="40"/>
+    <item external="True" url="https://artworks.thetvdb.com/banners/v4/season/1868999/posters/6056623dced73.jpg" preview="c1322f0a6a4655ea038ceb58cc48e84e06bab96f" sort_order="41"/>
+  </posters>
+  <banners/>
+  <rating_key/>
+  <source_title/>
+</Season>

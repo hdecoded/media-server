@@ -1,0 +1,10 @@
+Tue Mar 23 08:43:33 2021 v60: Creating new database, version 70
+Tue Mar 23 08:43:33 2021 v65: Adding Reading,Abandoned columns to users table
+Tue Mar 23 08:43:33 2021 v66: Creating subscribers table
+Tue Mar 23 08:43:33 2021 v67: Adding Prefs to users table
+Tue Mar 23 08:43:33 2021 v68: Adding Completed to wanted table
+Tue Mar 23 08:43:33 2021 v70: Copied authorid for 0 authors (from 0)
+Tue Mar 23 08:43:33 2021 v70: Copied bookid for 0 books (from 0)
+Tue Mar 23 08:43:33 2021 Changed: 7
+Tue Mar 23 08:43:33 2021: Cleaning Database
+Tue Mar 23 08:43:33 2021: Database updated to version 70

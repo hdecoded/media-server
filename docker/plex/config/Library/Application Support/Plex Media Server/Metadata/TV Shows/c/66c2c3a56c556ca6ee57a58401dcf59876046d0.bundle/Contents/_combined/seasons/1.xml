@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Season>
+  <art/>
+  <banners/>
+  <episodes>
+    <item external="True" key="1" originally_available_at="2021-03-19"/>
+    <item external="True" key="3" originally_available_at="2021-04-02"/>
+    <item external="True" key="2" originally_available_at="2021-03-26"/>
+    <item external="True" key="4" originally_available_at="2021-04-09"/>
+  </episodes>
+  <posters>
+    <item external="True" url="https://artworks.thetvdb.com/banners/v4/season/1868999/posters/6056610a0d6e1.jpg" sort_order="40" provider="com.plexapp.agents.thetvdb" media="com.plexapp.agents.thetvdb_9b611922fd9102a05e8862d0fff062e4e764e012"/>
+    <item external="True" url="https://artworks.thetvdb.com/banners/v4/season/1868999/posters/6056623dced73.jpg" preview="com.plexapp.agents.thetvdb_c1322f0a6a4655ea038ceb58cc48e84e06bab96f" sort_order="41" provider="com.plexapp.agents.thetvdb"/>
+  </posters>
+</Season>

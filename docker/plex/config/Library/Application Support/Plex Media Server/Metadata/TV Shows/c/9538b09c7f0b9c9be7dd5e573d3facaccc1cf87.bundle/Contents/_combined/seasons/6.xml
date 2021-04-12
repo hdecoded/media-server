@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Season>
+  <art/>
+  <banners/>
+  <episodes>
+    <item external="True" key="11" originally_available_at="2020-02-11"/>
+    <item external="True" key="10" originally_available_at="2020-02-04"/>
+    <item external="True" key="13" originally_available_at="2020-02-25"/>
+    <item external="True" key="12" originally_available_at="2020-02-18"/>
+    <item external="True" key="15" originally_available_at="2020-03-17"/>
+    <item external="True" key="14" originally_available_at="2020-03-10"/>
+    <item external="True" key="17" originally_available_at="2020-04-28"/>
+    <item external="True" key="16" originally_available_at="2020-04-21"/>
+    <item external="True" key="19" originally_available_at="2020-05-12"/>
+    <item external="True" key="18" originally_available_at="2020-05-05"/>
+  </episodes>
+  <posters>
+    <item external="True" url="https://artworks.thetvdb.com/banners/seasons/5d8cfaf1286ed.jpg" sort_order="79" provider="com.plexapp.agents.thetvdb" media="com.plexapp.agents.thetvdb_b6782de33eba138254e7450fa2823cdf25f821a5"/>
+    <item external="True" url="https://artworks.thetvdb.com/banners/series/279121/seasons/815982/posters/62079090.jpg" preview="com.plexapp.agents.thetvdb_fe2e04e8fdab3c700506017ba43afdfaa367ac8a" sort_order="100" provider="com.plexapp.agents.thetvdb"/>
+    <item external="True" url="https://artworks.thetvdb.com/banners/series/279121/seasons/815982/posters/62073639.jpg" preview="com.plexapp.agents.thetvdb_1bac8e93f1ac81f40dc629e9c669f5a9934a4238" sort_order="203" provider="com.plexapp.agents.thetvdb"/>
+  </posters>
+</Season>

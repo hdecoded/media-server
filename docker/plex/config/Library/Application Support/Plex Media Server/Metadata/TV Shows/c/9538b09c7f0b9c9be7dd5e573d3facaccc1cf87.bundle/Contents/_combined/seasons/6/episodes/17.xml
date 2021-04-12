@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Episode>
+  <directors/>
+  <guest_stars/>
+  <originally_available_at>2020-04-28</originally_available_at>
+  <producers/>
+  <rating>0.0</rating>
+  <summary>After recent events, Barry takes a closer look at his life with Iris. Eva makes a bold move.</summary>
+  <tags/>
+  <thumbs>
+    <item external="True" url="https://artworks.thetvdb.com/banners/series/279121/episodes/5ea8b81e8562c.jpg" provider="com.plexapp.agents.thetvdb" media="com.plexapp.agents.thetvdb_9082c6f00fb2e66f88dd4310d483c6557b9886f2"/>
+  </thumbs>
+  <title>Liberation</title>
+  <writers>
+    <item index="0">
+      <photo/>
+      <role/>
+      <name>Gabriel Garza</name>
+    </item>
+    <item index="1">
+      <photo/>
+      <role/>
+      <name>Jonathan Butler</name>
+    </item>
+  </writers>
+</Episode>

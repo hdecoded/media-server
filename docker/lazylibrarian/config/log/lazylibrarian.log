@@ -1,0 +1,325 @@
+23-Mar-2021 08:43:29 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+23-Mar-2021 08:43:29 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+23-Mar-2021 08:43:29 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+23-Mar-2021 08:43:29 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v0, integrity check: ok
+23-Mar-2021 08:43:29 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+23-Mar-2021 08:43:31 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+23-Mar-2021 08:43:31 - INFO    :: MAIN : __init__.py:build_bookstrap_themes:1903 : Bookstrap found 16 themes
+23-Mar-2021 08:43:33 - INFO    :: MAIN : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+23-Mar-2021 08:43:33 - WARNING :: MAIN : LazyLibrarian.py:main:251 : Unrecognised version [ec843478] to force upgrade delete /config/cache/version.txt
+23-Mar-2021 08:43:33 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+23-Mar-2021 08:43:33 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+23-Mar-2021 08:43:33 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+23-Mar-2021 08:43:33 - INFO    :: MAIN : dbupgrade.py:dbupgrade:178 : Creating new database, version 70
+23-Mar-2021 08:43:33 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 0 errors
+23-Mar-2021 08:43:33 - INFO    :: MAIN : dbupgrade.py:dbupgrade:287 : Database updated to version 70
+23-Mar-2021 08:44:34 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+23-Mar-2021 08:44:34 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+23-Mar-2021 08:44:34 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+23-Mar-2021 08:44:35 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+23-Mar-2021 08:45:05 - INFO    :: WEBSERVER : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+23-Mar-2021 08:46:08 - INFO    :: WEBSERVER : __init__.py:config_write:1216 : Writing config for section [TRANSMISSION]
+23-Mar-2021 08:46:08 - INFO    :: CONFIG_WRITE : __init__.py:config_write:1607 : Config file [/config/config.ini] TRANSMISSION has been updated
+23-Mar-2021 08:46:44 - INFO    :: WEBSERVER : __init__.py:config_write:1216 : Writing config for section [TRANSMISSION]
+23-Mar-2021 08:46:44 - INFO    :: CONFIG_WRITE : __init__.py:config_write:1607 : Config file [/config/config.ini] TRANSMISSION has been updated
+23-Mar-2021 08:47:00 - INFO    :: CONFIG_WRITE : __init__.py:config_write:1607 : Config file [/config/config.ini]  has been updated
+23-Mar-2021 08:47:55 - WARNING :: WEBSERVER : webServe.py:forceSearch:6233 : Search called but no download providers set
+23-Mar-2021 08:47:56 - WARNING :: WEBSERVER : webServe.py:forceSearch:6233 : Search called but no download providers set
+23-Mar-2021 08:48:29 - INFO    :: AAUPDATE : common.py:aaUpdate:1003 : Starting update for 0 active authors
+23-Mar-2021 08:48:29 - INFO    :: AAUPDATE : common.py:aaUpdate:1009 : Active author update complete
+23-Mar-2021 08:48:46 - WARNING :: WEBSERVER : webServe.py:forceSearch:6233 : Search called but no download providers set
+23-Mar-2021 08:51:06 - INFO    :: ADDAUTHORID : importer.py:addAuthorToDB:461 : OL1437280A [Brett McLaughlin] Author update complete, status Active
+23-Mar-2021 08:51:23 - WARNING :: WEBSERVER : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 08:51:23 - WARNING :: WEBSERVER : webServe.py:libraryScanAuthor:2036 : Unable to find author directory: /config/Andrew Stellman
+23-Mar-2021 08:51:30 - ERROR   :: REFRESHAUTHOR_OL2726980A : database.py:_action:168 : Database IntegrityError: UNIQUE constraint failed: books.BookID
+23-Mar-2021 08:51:30 - ERROR   :: REFRESHAUTHOR_OL2726980A : database.py:_action:169 : Failed query: [INSERT INTO books (AuthorID, BookName, BookImg, BookLink, BookID, BookDate, BookLang, BookAdded, Status, WorkPage, AudioStatus, ScanResult, OriginalPubDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)]
+23-Mar-2021 08:51:30 - ERROR   :: REFRESHAUTHOR_OL2726980A : database.py:_action:170 : Failed args: [('OL2726980A', 'Beautiful teams', 'images/nocover.png', '/works/OL15598707W', 'OL15598707W', '2009', 'eng', '2021-03-23 08:51:30', 'Skipped', '', 'Skipped', '[REFRESHAUTHOR_OL2726980A] WebServer refreshAuthor OL2726980A', 2009)]
+23-Mar-2021 08:51:30 - ERROR   :: REFRESHAUTHOR_OL2726980A : importer.py:addAuthorToDB:469 : Unhandled exception in addAuthorToDB: Traceback (most recent call last):
+  File "/app/lazylibrarian/lazylibrarian/importer.py", line 435, in addAuthorToDB
+    refresh=refresh, reason=reason)
+  File "/app/lazylibrarian/lazylibrarian/ol.py", line 1089, in get_author_books
+    lang, now(), bookstatus, '', audiostatus, reason, first_publish_year))
+  File "/app/lazylibrarian/lazylibrarian/database.py", line 88, in action
+    return self._action(query, args, suppress)
+  File "/app/lazylibrarian/lazylibrarian/database.py", line 114, in _action
+    sqlResult = self.connection.execute(query, args)
+sqlite3.IntegrityError: UNIQUE constraint failed: books.BookID
+
+23-Mar-2021 08:51:36 - INFO    :: ADDAUTHORID : importer.py:addAuthorToDB:461 : OL2726980A [Andrew Stellman] Author update complete, status Active
+23-Mar-2021 08:51:44 - WARNING :: EBOOK_SCAN : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 08:51:44 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:591 : Scanning eBook directory: /config
+23-Mar-2021 08:51:44 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1301 : 0/0 new/modified eBooks found and added to the database
+23-Mar-2021 08:51:44 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1302 : 65 files processed
+23-Mar-2021 08:51:44 - WARNING :: EBOOK_SCAN : bookwork.py:getBookWork:447 : New WhatWork is disabled
+23-Mar-2021 08:51:44 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1407 : Library scan complete
+23-Mar-2021 08:51:45 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+23-Mar-2021 08:51:45 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+23-Mar-2021 08:51:45 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+23-Mar-2021 08:51:48 - WARNING :: EBOOK_SCAN : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 08:51:48 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:591 : Scanning eBook directory: /config
+23-Mar-2021 08:51:48 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1301 : 0/0 new/modified eBooks found and added to the database
+23-Mar-2021 08:51:48 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1302 : 65 files processed
+23-Mar-2021 08:51:48 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1407 : Library scan complete
+23-Mar-2021 08:54:22 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 08:54:46 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 08:54:57 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 08:57:36 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 08:57:41 - WARNING :: WEBSERVER : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 08:57:41 - WARNING :: WEBSERVER : webServe.py:libraryScanAuthor:2036 : Unable to find author directory: /config/Brett McLaughlin
+23-Mar-2021 08:57:42 - WARNING :: WEBSERVER : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 08:57:42 - WARNING :: WEBSERVER : webServe.py:libraryScanAuthor:2036 : Unable to find author directory: /config/Brett McLaughlin
+23-Mar-2021 09:19:55 - INFO    :: WEBSERVER : webServe.py:removeAuthor:1913 : Removing all references to author: Andrew Stellman
+23-Mar-2021 09:21:21 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL1399689A [Dan Pilone] Author update complete, status Paused
+23-Mar-2021 09:21:22 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head first software development Language [Unknown] does not match preference
+23-Mar-2021 09:21:23 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head first software development by Dan Pilone added to the books database, Wanted/Skipped
+23-Mar-2021 09:21:39 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 09:21:41 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 09:22:06 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 09:22:12 - INFO    :: ADDAUTHORID : importer.py:addAuthorToDB:461 : OL1399689A [Dan Pilone] Author update complete, status Active
+23-Mar-2021 09:23:55 - WARNING :: TESTPROVIDER : providers.py:get_capabilities:337 : Unable to get capabilities for http://api?t=caps: No data returned
+23-Mar-2021 09:24:03 - WARNING :: TESTPROVIDER : providers.py:get_capabilities:337 : Unable to get capabilities for http://api?t=caps: No data returned
+23-Mar-2021 09:24:07 - ERROR   :: TESTPROVIDER : providers.py:RSS:1180 : Error fetching data from : Exception InvalidURL: Invalid URL 'http://': No host supplied
+23-Mar-2021 09:24:07 - INFO    :: TESTPROVIDER : providers.py:BlockProvider:488 : Blocking provider  for 60 minutes because Exception InvalidURL: Invalid URL 'http://': No host supplied
+23-Mar-2021 09:24:54 - INFO    :: TESTPROVIDER : __init__.py:config_write:1216 : Writing config for section [BFI]
+23-Mar-2021 09:24:54 - INFO    :: CONFIG_WRITE : __init__.py:config_write:1607 : Config file [/config/config.ini] BFI has been updated
+23-Mar-2021 09:25:04 - INFO    :: TESTPROVIDER : __init__.py:config_write:1216 : Writing config for section [BFI]
+23-Mar-2021 09:25:04 - INFO    :: CONFIG_WRITE : __init__.py:config_write:1607 : Config file [/config/config.ini] BFI has been updated
+23-Mar-2021 09:25:11 - ERROR   :: TESTPROVIDER : cache.py:fetchURL:135 : fetchURL: Timeout getting response from http://kickass.cd/usearch/Agatha%20Christie/?category=books&field=seeders&sorder=desc
+23-Mar-2021 09:25:11 - INFO    :: TESTPROVIDER : __init__.py:config_write:1216 : Writing config for section [BFI]
+23-Mar-2021 09:25:11 - INFO    :: CONFIG_WRITE : __init__.py:config_write:1607 : Config file [/config/config.ini] BFI has been updated
+23-Mar-2021 09:26:42 - INFO    :: TESTPROVIDER : __init__.py:config_write:1216 : Writing config for section [BOK]
+23-Mar-2021 09:26:42 - INFO    :: CONFIG_WRITE : __init__.py:config_write:1607 : Config file [/config/config.ini] BOK has been updated
+23-Mar-2021 09:26:54 - WARNING :: TESTPROVIDER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 09:26:58 - INFO    :: WEBSERVER : webServe.py:removeAuthor:1913 : Removing all references to author: Brett McLaughlin
+23-Mar-2021 09:27:18 - INFO    :: WEBSERVER : webServe.py:removeAuthor:1913 : Removing all references to author: Dan Pilone
+23-Mar-2021 09:28:45 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL1437280A [Brett McLaughlin] Author update complete, status Paused
+23-Mar-2021 09:28:46 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head first object-oriented analysis and design Language [Unknown] does not match preference
+23-Mar-2021 09:28:47 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head first object-oriented analysis and design by Brett McLaughlin added to the books database, Wanted/Skipped
+23-Mar-2021 09:28:56 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL2726980A [Andrew Stellman] Author update complete, status Paused
+23-Mar-2021 09:28:58 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head First Agile: A Brain-Friendly Guide to Agile Principles, Ideas, and Real-World Practices Language [Unknown] does not match preference
+23-Mar-2021 09:28:59 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head First Agile: A Brain-Friendly Guide to Agile Principles, Ideas, and Real-World Practices by Andrew Stellman added to the books database, Wanted/Skipped
+23-Mar-2021 09:29:36 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL2803923A [Rebecca Riordan] Author update complete, status Paused
+23-Mar-2021 09:29:37 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head First Ajax Language [Unknown] does not match preference
+23-Mar-2021 09:29:38 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head First Ajax by Rebecca Riordan added to the books database, Wanted/Skipped
+23-Mar-2021 09:30:06 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL35350A [Michael Morrison] Author update complete, status Paused
+23-Mar-2021 09:30:07 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head first JavaScript Language [Unknown] does not match preference
+23-Mar-2021 09:30:08 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head first JavaScript by Michael Morrison added to the books database, Wanted/Skipped
+23-Mar-2021 09:30:49 - INFO    :: TESTPROVIDER : importer.py:addAuthorToDB:461 : OL2788245A [Michael Milton] Author update complete, status Paused
+23-Mar-2021 09:30:50 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head first data analysis Language [Unknown] does not match preference
+23-Mar-2021 09:30:51 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head first data analysis by Michael Milton added to the books database, Wanted/Skipped
+23-Mar-2021 09:31:19 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL1437280A [Brett McLaughlin] Author update complete, status Paused
+23-Mar-2021 09:31:21 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head Rush Ajax (Head First) Language [Unknown] does not match preference
+23-Mar-2021 09:31:22 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head Rush Ajax (Head First) by Brett McLaughlin added to the books database, Wanted/Skipped
+23-Mar-2021 09:32:54 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL2670067A [Eric Freeman] Author update complete, status Paused
+23-Mar-2021 09:32:56 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head First Design Patterns Language [Unknown] does not match preference
+23-Mar-2021 09:32:56 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head First Design Patterns by Eric Freeman added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:03 - INFO    :: TESTPROVIDER : importer.py:addAuthorToDB:461 : OL3501210A [Vernon Ceder] Author update complete, status Paused
+23-Mar-2021 09:33:04 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head First Programming Language [Unknown] does not match preference
+23-Mar-2021 09:33:05 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head First Programming by Vernon Ceder added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:09 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL2464696A [Al Anderson] Author update complete, status Paused
+23-Mar-2021 09:33:11 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head first networking Language [Unknown] does not match preference
+23-Mar-2021 09:33:12 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head first networking by Al Anderson added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:12 - WARNING :: WEBSERVER : importer.py:addAuthorToDB:249 : Conflicting authorid for Eric Freeman (new:OL5426823A old:OL2670067A) Using existing authorid
+23-Mar-2021 09:33:12 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL2670067A [Eric Freeman] Author update complete, status Paused
+23-Mar-2021 09:33:14 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head First design patterns Language [Unknown] does not match preference
+23-Mar-2021 09:33:15 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head First design patterns by unknown author OL5426823A added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:23 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL7057716A [Ryan Benedetti] Author update complete, status Paused
+23-Mar-2021 09:33:23 - INFO    :: WEBSERVER : importer.py:addAuthorToDB:461 : OL7057716A [Ryan Benedetti] Author update complete, status Paused
+23-Mar-2021 09:33:24 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head first jQuery Language [Unknown] does not match preference
+23-Mar-2021 09:33:25 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head first jQuery Language [Unknown] does not match preference
+23-Mar-2021 09:33:26 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head first jQuery by Ryan Benedetti added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:26 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head first jQuery by Ryan Benedetti added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:32 - ERROR   :: WEBSERVER : database.py:_action:168 : Database IntegrityError: UNIQUE constraint failed: authors.AuthorName
+23-Mar-2021 09:33:32 - ERROR   :: WEBSERVER : database.py:_action:169 : Failed query: [UPDATE authors SET Updated = ?, AuthorBorn = ?, AuthorDeath = ?, AuthorLink = ?, AuthorName = ? WHERE AuthorID = ?]
+23-Mar-2021 09:33:32 - ERROR   :: WEBSERVER : database.py:_action:170 : Failed args: [[1616492012, '1965', '', 'https://www.openlibrary.org/authors/OL5426823A', 'Eric Freeman', 'OL5426823A']]
+23-Mar-2021 09:33:32 - ERROR   :: WEBSERVER : importer.py:addAuthorToDB:469 : Unhandled exception in addAuthorToDB: Traceback (most recent call last):
+  File "/app/lazylibrarian/lazylibrarian/importer.py", line 284, in addAuthorToDB
+    myDB.upsert("authors", newValueDict, controlValueDict)
+  File "/app/lazylibrarian/lazylibrarian/database.py", line 232, in upsert
+    self._action(query, list(valueDict.values()) + list(keyDict.values()))
+  File "/app/lazylibrarian/lazylibrarian/database.py", line 114, in _action
+    sqlResult = self.connection.execute(query, args)
+sqlite3.IntegrityError: UNIQUE constraint failed: authors.AuthorName
+
+23-Mar-2021 09:33:34 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head First HTML5 programming Language [Unknown] does not match preference
+23-Mar-2021 09:33:35 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head First HTML5 programming by unknown author OL5426823A added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:41 - ERROR   :: WEBSERVER : database.py:_action:168 : Database IntegrityError: UNIQUE constraint failed: authors.AuthorName
+23-Mar-2021 09:33:41 - ERROR   :: WEBSERVER : database.py:_action:169 : Failed query: [UPDATE authors SET Updated = ?, AuthorBorn = ?, AuthorDeath = ?, AuthorLink = ?, AuthorName = ? WHERE AuthorID = ?]
+23-Mar-2021 09:33:41 - ERROR   :: WEBSERVER : database.py:_action:170 : Failed args: [[1616492021, '1965', '', 'https://www.openlibrary.org/authors/OL5426823A', 'Eric Freeman', 'OL5426823A']]
+23-Mar-2021 09:33:41 - ERROR   :: WEBSERVER : importer.py:addAuthorToDB:469 : Unhandled exception in addAuthorToDB: Traceback (most recent call last):
+  File "/app/lazylibrarian/lazylibrarian/importer.py", line 284, in addAuthorToDB
+    myDB.upsert("authors", newValueDict, controlValueDict)
+  File "/app/lazylibrarian/lazylibrarian/database.py", line 232, in upsert
+    self._action(query, list(valueDict.values()) + list(keyDict.values()))
+  File "/app/lazylibrarian/lazylibrarian/database.py", line 114, in _action
+    sqlResult = self.connection.execute(query, args)
+sqlite3.IntegrityError: UNIQUE constraint failed: authors.AuthorName
+
+23-Mar-2021 09:33:43 - WARNING :: OL-BOOK : ol.py:find_book:1180 : Book Head First Design Pattrens Language [Unknown] does not match preference
+23-Mar-2021 09:33:44 - INFO    :: OL-BOOK : ol.py:find_book:1301 : Head First Design Pattrens by unknown author OL5426823A added to the books database, Wanted/Skipped
+23-Mar-2021 09:33:51 - WARNING :: WEBSERVER : webServe.py:forceSearch:6233 : Search called but no download providers set
+23-Mar-2021 09:33:55 - WARNING :: WEBSERVER : webServe.py:startBookSearch:2684 : Not searching for book, no search methods set, check config.
+23-Mar-2021 09:34:01 - WARNING :: WEBSERVER : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 09:34:01 - WARNING :: WEBSERVER : webServe.py:libraryScanAuthor:2036 : Unable to find author directory: /config/Al Anderson
+23-Mar-2021 09:34:02 - WARNING :: WEBSERVER : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 09:34:02 - WARNING :: WEBSERVER : webServe.py:libraryScanAuthor:2036 : Unable to find author directory: /config/Al Anderson
+23-Mar-2021 09:34:03 - WARNING :: WEBSERVER : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 09:34:03 - WARNING :: WEBSERVER : webServe.py:libraryScanAuthor:2036 : Unable to find author directory: /config/Al Anderson
+23-Mar-2021 09:34:04 - WARNING :: WEBSERVER : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 09:34:04 - WARNING :: WEBSERVER : webServe.py:libraryScanAuthor:2036 : Unable to find author directory: /config/Al Anderson
+23-Mar-2021 09:36:08 - WARNING :: EBOOK_SCAN : __init__.py:DIRECTORY:1723 : eBook dir [''] not found, using /config
+23-Mar-2021 09:36:08 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:591 : Scanning eBook directory: /config
+23-Mar-2021 09:36:09 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1301 : 0/0 new/modified eBooks found and added to the database
+23-Mar-2021 09:36:09 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1302 : 140 files processed
+23-Mar-2021 09:36:09 - INFO    :: EBOOK_SCAN : librarysync.py:LibraryScan:1407 : Library scan complete
+23-Mar-2021 09:36:12 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+23-Mar-2021 09:36:12 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+23-Mar-2021 09:36:12 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+23-Mar-2021 10:02:41 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+23-Mar-2021 10:02:41 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+23-Mar-2021 10:02:41 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+23-Mar-2021 10:02:41 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+23-Mar-2021 10:02:41 - WARNING :: MAIN : dbupgrade.py:check_db:519 : Updating 1 book with no language to "Unknown"
+23-Mar-2021 10:02:41 - WARNING :: MAIN : dbupgrade.py:check_db:570 : Removing 1 book with no bookid
+23-Mar-2021 10:02:41 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+23-Mar-2021 10:02:41 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 12 errors
+23-Mar-2021 10:02:41 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+23-Mar-2021 10:02:43 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+23-Mar-2021 10:02:44 - INFO    :: MAIN : __init__.py:build_bookstrap_themes:1903 : Bookstrap found 16 themes
+23-Mar-2021 10:02:46 - INFO    :: MAIN : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+23-Mar-2021 10:02:46 - WARNING :: MAIN : LazyLibrarian.py:main:251 : Unrecognised version [ec843478] to force upgrade delete /config/cache/version.txt
+23-Mar-2021 10:02:46 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+23-Mar-2021 10:02:46 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+23-Mar-2021 10:02:46 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+23-Mar-2021 10:03:46 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+23-Mar-2021 10:03:46 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+23-Mar-2021 10:03:46 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+24-Mar-2021 10:02:48 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+25-Mar-2021 10:02:47 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+26-Mar-2021 10:02:47 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+27-Mar-2021 10:02:47 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+28-Mar-2021 10:02:47 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+29-Mar-2021 10:02:47 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+30-Mar-2021 10:02:47 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+31-Mar-2021 10:02:48 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+01-Apr-2021 10:02:48 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+02-Apr-2021 10:02:48 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+03-Apr-2021 07:07:06 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+03-Apr-2021 07:07:06 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+03-Apr-2021 07:07:06 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+03-Apr-2021 07:07:06 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+03-Apr-2021 07:07:06 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+03-Apr-2021 07:07:06 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 10 errors
+03-Apr-2021 07:07:06 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+03-Apr-2021 07:07:16 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+03-Apr-2021 07:07:36 - WARNING :: MAIN : versioncheck.py:logmsg:45 : Could not get the latest commit from git
+03-Apr-2021 07:07:36 - INFO    :: MAIN : versioncheck.py:logmsg:41 : Unable to get latest version from gitlab.com
+03-Apr-2021 07:07:36 - INFO    :: MAIN : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+03-Apr-2021 07:07:36 - WARNING :: MAIN : LazyLibrarian.py:main:251 : Unrecognised version [ec843478] to force upgrade delete /config/cache/version.txt
+03-Apr-2021 07:07:36 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+03-Apr-2021 07:07:36 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+03-Apr-2021 07:07:36 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+03-Apr-2021 07:08:37 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+03-Apr-2021 07:08:37 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+03-Apr-2021 07:08:37 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+04-Apr-2021 07:07:46 - WARNING :: CRON-VERSIONCHECK : versioncheck.py:logmsg:45 : Could not get the latest commit from git
+04-Apr-2021 07:07:46 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Unable to get latest version from gitlab.com
+04-Apr-2021 07:07:46 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+04-Apr-2021 08:40:49 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+04-Apr-2021 08:40:49 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+04-Apr-2021 08:40:49 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+04-Apr-2021 08:40:49 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+04-Apr-2021 08:40:49 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+04-Apr-2021 08:40:49 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 10 errors
+04-Apr-2021 08:40:49 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+04-Apr-2021 08:40:50 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+04-Apr-2021 08:40:51 - INFO    :: MAIN : __init__.py:build_bookstrap_themes:1903 : Bookstrap found 16 themes
+04-Apr-2021 08:40:52 - INFO    :: MAIN : versioncheck.py:logmsg:41 : New version is available. You are 3 commits behind
+04-Apr-2021 08:40:52 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+04-Apr-2021 08:40:52 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+04-Apr-2021 08:40:52 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+04-Apr-2021 08:41:52 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+04-Apr-2021 08:41:52 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+04-Apr-2021 08:41:52 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+05-Apr-2021 08:40:54 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : New version is available. You are 3 commits behind
+06-Apr-2021 08:40:54 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : New version is available. You are 10 commits behind
+07-Apr-2021 08:40:54 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : New version is available. You are 13 commits behind
+08-Apr-2021 08:40:53 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : New version is available. You are 20 commits behind
+09-Apr-2021 08:36:18 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+09-Apr-2021 08:36:18 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+09-Apr-2021 08:36:18 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+09-Apr-2021 08:36:18 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+09-Apr-2021 08:36:19 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+09-Apr-2021 08:36:19 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 10 errors
+09-Apr-2021 08:36:19 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+09-Apr-2021 08:36:20 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+09-Apr-2021 08:36:21 - INFO    :: MAIN : __init__.py:build_bookstrap_themes:1903 : Bookstrap found 16 themes
+09-Apr-2021 08:36:22 - INFO    :: MAIN : versioncheck.py:logmsg:41 : New version is available. You are 20 commits behind
+09-Apr-2021 08:36:22 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+09-Apr-2021 08:36:22 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+09-Apr-2021 08:36:22 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+09-Apr-2021 08:37:22 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+09-Apr-2021 08:37:22 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+09-Apr-2021 08:37:22 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+09-Apr-2021 09:34:04 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+09-Apr-2021 09:34:04 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+09-Apr-2021 09:34:04 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+09-Apr-2021 09:34:05 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+09-Apr-2021 09:34:05 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+09-Apr-2021 09:34:05 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 10 errors
+09-Apr-2021 09:34:05 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+09-Apr-2021 09:34:06 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+09-Apr-2021 09:34:07 - INFO    :: MAIN : __init__.py:build_bookstrap_themes:1903 : Bookstrap found 16 themes
+09-Apr-2021 09:34:08 - INFO    :: MAIN : versioncheck.py:logmsg:41 : New version is available. You are 20 commits behind
+09-Apr-2021 09:34:08 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+09-Apr-2021 09:34:08 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+09-Apr-2021 09:34:08 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+09-Apr-2021 09:35:08 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+09-Apr-2021 09:35:08 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+09-Apr-2021 09:35:08 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+09-Apr-2021 10:35:43 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+09-Apr-2021 10:35:43 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+09-Apr-2021 10:35:43 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+09-Apr-2021 10:35:43 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+09-Apr-2021 10:35:43 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+09-Apr-2021 10:35:43 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 10 errors
+09-Apr-2021 10:35:43 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+09-Apr-2021 10:35:53 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+                                                                                                                                                                                                                                                                                                                                 09-Apr-2021 10:35:33 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+09-Apr-2021 10:35:33 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+09-Apr-2021 10:35:33 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+09-Apr-2021 10:35:33 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+09-Apr-2021 10:35:33 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+09-Apr-2021 10:35:33 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 10 errors
+09-Apr-2021 10:35:33 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+09-Apr-2021 10:35:43 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+09-Apr-2021 10:36:03 - WARNING :: MAIN : versioncheck.py:logmsg:45 : Could not get the latest commit from git
+09-Apr-2021 10:36:03 - INFO    :: MAIN : versioncheck.py:logmsg:41 : Unable to get latest version from gitlab.com
+09-Apr-2021 10:36:03 - INFO    :: MAIN : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+09-Apr-2021 10:36:03 - WARNING :: MAIN : LazyLibrarian.py:main:251 : Unrecognised version [ec843478] to force upgrade delete /config/cache/version.txt
+09-Apr-2021 10:36:03 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+09-Apr-2021 10:36:03 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+09-Apr-2021 10:36:03 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+09-Apr-2021 10:37:03 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+09-Apr-2021 10:37:03 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+09-Apr-2021 10:37:03 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+10-Apr-2021 10:36:13 - WARNING :: CRON-VERSIONCHECK : versioncheck.py:logmsg:45 : Could not get the latest commit from git
+10-Apr-2021 10:36:13 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Unable to get latest version from gitlab.com
+10-Apr-2021 10:36:13 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : Lazylibrarian is up to date
+11-Apr-2021 02:04:24 - INFO    :: MAIN : __init__.py:initialize:826 : Log (Rotating) Level set to [1]- Log Directory is [/config/log] - Config level is [1]
+11-Apr-2021 02:04:24 - INFO    :: MAIN : __init__.py:initialize:832 : Screen Log set to INFO
+11-Apr-2021 02:04:24 - INFO    :: MAIN : __init__.py:config_read:1207 : Config file loaded
+11-Apr-2021 02:04:24 - INFO    :: MAIN : __init__.py:initialize:937 : Database is v70, integrity check: ok
+11-Apr-2021 02:04:24 - WARNING :: MAIN : dbupgrade.py:check_db:752 : Found 10 authors with no books in the library or marked wanted
+11-Apr-2021 02:04:24 - INFO    :: MAIN : dbupgrade.py:check_db:771 : Database check found 10 errors
+11-Apr-2021 02:04:24 - INFO    :: MAIN : common.py:logHeader:1364 : Checking TLS version, you can ignore any "InsecureRequestWarning" message
+11-Apr-2021 02:04:25 - INFO    :: MAIN : __init__.py:build_genres:1918 : Loaded genres from /app/lazylibrarian/example.genres.json
+11-Apr-2021 02:04:26 - INFO    :: MAIN : __init__.py:build_bookstrap_themes:1903 : Bookstrap found 16 themes
+11-Apr-2021 02:04:27 - INFO    :: MAIN : versioncheck.py:logmsg:41 : New version is available. You are 28 commits behind
+11-Apr-2021 02:04:27 - INFO    :: MAIN : LazyLibrarian.py:main:269 : Apprise library (0.9.1) installed
+11-Apr-2021 02:04:27 - INFO    :: MAIN : LazyLibrarian.py:main:286 : Starting LazyLibrarian on port: 5299, webroot ""
+11-Apr-2021 02:04:27 - INFO    :: MAIN : webStart.py:initialize:69 : Starting LazyLibrarian web server on http://0.0.0.0:5299
+11-Apr-2021 02:05:28 - INFO    :: POSTPROCESS : postprocess.py:processDir:1290 : 0 downloads processed.
+11-Apr-2021 02:05:28 - INFO    :: POSTPROCESS : postprocess.py:processDir:1295 : Found 0 unprocessed
+11-Apr-2021 02:05:28 - INFO    :: POSTPROCESS : postprocess.py:processDir:1420 : Nothing marked as snatched or seeding. Stopping postprocessor.
+12-Apr-2021 02:04:30 - INFO    :: CRON-VERSIONCHECK : versioncheck.py:logmsg:41 : New version is available. You are 28 commits behind
