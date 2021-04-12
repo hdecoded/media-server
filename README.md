@@ -20,7 +20,7 @@ Docker-Compose and configuration files to run the Media-Server on Raspberry Pi
 3. Download [docker-compose.yml](https://github.com/hdecoded/media-server/blob/main/docker-compose.yml)
 4. Open docker-compose.yml for edit
 5. Comment/Remove the services you don't need
-6. change the paths in all volumes "/mnt/media/" according to your operating system and desired location
+6. Change the paths in all volumes `/mnt/media/` according to your operating system and a desired location
 7. Open Terminal or Command-Prompt
 8. Navigate to the docker-compose.yml location
 9. Enter `docker-compose up -d`
